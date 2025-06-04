@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Butcherman&family=Caesar+Dressing&family=Creepster&family=Fruktur&family=Freckle+Face&family=Griffy&family=Kavoon&family=Kelly+Slab&family=Macondo&family=Monofett&family=Mystery+Quest&family=Rubik+Moonrocks&family=Rye&family=Slackey&family=Sniglet&family=Special+Elite&family=Trade+Winds&family=UnifrakturCook:700&family=Vast+Shadow&display=swap');
-
-
 body {
     height: fit-content;
     background: #05051f;
@@ -66,15 +63,11 @@ margin-bottom: 2vh;
 
 *{
        font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+font-size: clamp(1.25rem, 2vw, 2rem);
     color: white;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
-.fadeOut {
-    transition:  ease-in-out 1s;
-}
-
+user-select: none;
+  }
 .line{
   align-self: flex-start;
 }

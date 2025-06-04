@@ -122,6 +122,6 @@ function placeImageAtCoordinates(Xcoor, Ycoor) {
 
     
 
-img.style.left = Xcoor-100+'px';
-img.style.top = Ycoor-100+'px';
+img.style.left = Xcoor-200+'px';
+img.style.top = Ycoor-200+'px';
 }

@@ -98,6 +98,10 @@ body.addEventListener("mousedown", (e) => {
     const randomX = Math.floor(Math.random() * windowWidth)
         const randomY = Math.floor(Math.random()*windowHeight)
     placeImageAtCoordinates(randomX, randomY)
+
+        const randomX1 = Math.floor(Math.random() * windowWidth)
+        const randomY1 = Math.floor(Math.random()*windowHeight)
+    placeImageAtCoordinates(randomX1, randomY1)
 })
 
 const flowerArray = [
@@ -135,3 +139,18 @@ setInterval(() => {
     if (letter){
     letter.style.color = getRandomRgb()}
 }, 800);
+
+
+   const windowWidth = window.innerWidth
+    const windowHeight = document.body.scrollHeight
+    const randomX = Math.floor(Math.random() * windowWidth)
+        const randomY = Math.floor(Math.random()*windowHeight)
+    placeImageAtCoordinates(randomX, randomY)
+
+        const randomX1 = Math.floor(Math.random() * windowWidth)
+        const randomY1 = Math.floor(Math.random()*windowHeight)
+placeImageAtCoordinates(randomX1, randomY1)
+    
+        const randomX2 = Math.floor(Math.random() * windowWidth)
+        const randomY2 = Math.floor(Math.random()*windowHeight)
+    placeImageAtCoordinates(randomX2, randomY2)

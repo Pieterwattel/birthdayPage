@@ -19,7 +19,7 @@ background: linear-gradient(0deg,rgba(5, 5, 31, 1) 0%, rgb(53, 36, 133) 34%, rgb
     width: min(80vh, 80vw);
         height: min(80vh, 80vw);
         position:absolute;
-        bottom: -100vh;
+        bottom: -150vh;
 }
 
 .rotate {

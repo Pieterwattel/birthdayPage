@@ -62,8 +62,8 @@ margin-bottom: 2vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: calc(15vw - 80px);
+    margin-right: calc(15vw- 80px);
 }
 
 *{

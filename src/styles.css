@@ -8,6 +8,11 @@ background: linear-gradient(0deg,rgba(5, 5, 31, 1) 0%, rgb(53, 36, 133) 34%, rgb
     align-items: center;
 }
 
+@font-face {
+  font-family: 'retroFont'; /* Name your font family */
+  src: url('./Adobe\ Dia.ttf'); /* Locate the .ttf file within your directory*/
+}
+
 #spinningLines{
     z-index: -1;
     margin-top: 10vh;
@@ -62,12 +67,13 @@ margin-bottom: 2vh;
 }
 
 *{
-       font-family: 'Courier New', Courier, monospace;
-font-size: clamp(1rem, 3vh, 2rem);
+       font-family: 'retroFont';
+  font-size: clamp(1.8rem, 4vh, 4rem);
     color: white;
-    text-shadow: 4px 0 0 #000, 0 -4px 0 #000, 0 4px 0 #000, -4px 0 0 #000;
+    text-shadow: 0px 0 0 #000, 0 -0px 0 #000, 0 0px 0 #000, -0px 0 0 #000;
 user-select: none;
   }
+
 .line{
   align-self: flex-start;
 }

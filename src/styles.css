@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Butcherman&family=Caesar+Dressing&family=Creepster&family=Fruktur&family=Freckle+Face&family=Griffy&family=Kavoon&family=Kelly+Slab&family=Macondo&family=Monofett&family=Mystery+Quest&family=Rubik+Moonrocks&family=Rye&family=Slackey&family=Sniglet&family=Special+Elite&family=Trade+Winds&family=UnifrakturCook:700&family=Vast+Shadow&display=swap');
+
+
+body {
+    height: fit-content;
+    background: #05051f;
+background: linear-gradient(0deg,rgba(5, 5, 31, 1) 0%, rgb(53, 36, 133) 34%, rgb(209, 145, 25) 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#spinningLines{
+    z-index: -1;
+    margin-top: 10vh;
+    width: min(80vh, 80vw);
+        height: min(80vh, 80vw);
+        position:absolute;
+        bottom: -400px;
+}
+
+.rotate {
+  animation: rotation 100s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.rotate2 {
+  animation: rotation2 110s infinite linear;
+}
+
+@keyframes rotation2 {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+#titleDiv{
+   margin-bottom: 20vh;
+   margin-top: 20vh;
+   text-align: center;
+}
+
+div{
+margin-bottom: 2vh;
+}
+
+#textLines{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+*{
+       font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.fadeOut {
+    transition:  ease-in-out 1s;
+}
+
+.line{
+  align-self: flex-start;
+}
+
+img{
+}

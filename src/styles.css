@@ -1,7 +1,7 @@
 body {
     height: fit-content;
     background: #05051f;
-background: linear-gradient(0deg,rgba(5, 5, 31, 1) 0%, rgb(53, 36, 133) 34%, rgb(209, 145, 25) 100%);
+background: linear-gradient(0deg,rgb(83, 0, 116) 0%, rgb(211, 172, 0) 34%, rgb(116, 116, 116) 100%);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -80,3 +80,19 @@ user-select: none;
 
 img{
 }
+
+button{
+  color: black;
+  border: 3px solid rgb(63, 56, 56);
+  background-color: grey;
+  box-shadow: 3px 4px 0px black;
+}
+
+button:hover{
+  background-color: rgb(104, 104, 104);
+}
+
+button:active{
+  box-shadow: inset 3px 4px 0px  black;
+}
+

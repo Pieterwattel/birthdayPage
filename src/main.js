@@ -38,7 +38,7 @@ let name;
 })();
 
 
-const titleText = [`Hi ${name}!!`, '\n', 'I would love to see you when celebrating my birthday :)']
+const titleText = [`Dear ${name},`, '\n', 'I would love to see you when celebrating my birthday :)']
 const titleDiv = document.getElementById('titleDiv')
 
 function placeCoolLettersOrNextLine(string, parentElement) {

@@ -60,9 +60,9 @@ let textArray = [
     'when: 8th of july from 14:00', '\n',
     'where:', '\n', '\n',
     'On the 8th of july I would like to celebrate my birthday! Come when you want, leave when you want. stay between 1 minute and 1 day.', '\n',
-    "Do not feel pressure to bring any gifts, but feel free to bring something that is relaxing for you. Can be a book, a pillow, if you want to bring an instrument, please go ahead! (the stranger instrument the better)",'\n', '\n',
-    'Also I would like to make a "feestslinger" (garland?) so feel welcome to bring something I can add to the string that I will hang there. There will be a place for making music, some drinks and food. We will be near water, so there might be some swimming.', '\n', '\n',
-    'I short, please come celebrate the good life with me on the 8th of july,', '\n',
+    "Do not feel pressure to bring any gifts, but feel free to bring something that is relaxing/enjoyable for you. Can be a book, a pillow, if you want to bring an instrument, please do! (the stranger instrument the better)",'\n', '\n',
+    'Also I would like to make a "feestslinger" (garland?) so feel welcome to bring a flag/paper I can add to the string that I will hang there. There will be a place for making music, some drinks and food. We will be near water, so there might be some swimming.', '\n', '\n',
+    'In short, please come celebrate the good life with me on the 8th of july,', '\n',
     'bring along whoever you would like :)'
 ]
 

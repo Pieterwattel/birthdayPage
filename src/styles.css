@@ -78,9 +78,7 @@ user-select: none;
   align-self: flex-start;
 }
 
-button,
-a{
-  color: black;
+button{
   border: 3px solid rgb(63, 56, 56);
   background-color: grey;
   box-shadow: 3px 4px 0px black;

@@ -69,7 +69,7 @@ margin-bottom: 2vh;
 *{
        font-family: 'retroFont';
   font-size: clamp(1.8rem, 4vh, 4rem);
-    color: white;
+    color: rgb(255, 248, 236);
     text-shadow: 0px 0 0 #000, 0 -0px 0 #000, 0 0px 0 #000, -0px 0 0 #000;
 user-select: none;
   }

@@ -56,6 +56,7 @@ function placeCoolLettersOrNextLine(string, parentElement) {
         span.setAttribute('id', totalDivs)
         span.setAttribute('class', 'fadeOut')
         parentElement.appendChild(span)
+
     j++
         k++
         totalDivs ++
@@ -143,7 +144,7 @@ img.style.top = Ycoor-200+'px';
 let speedvariable = 350
 setInterval(() => {
 
-    let value = Math.floor(Math.random() * 950)
+    let value = Math.floor(Math.random() * 1000)
     const letter = document.getElementById(value)
     if (letter){
         letter.style.color = getRandomRgb()

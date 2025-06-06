@@ -4,7 +4,7 @@ import i2 from './2.png'
 import i3 from './3.png'
 import i4 from './4.png'
 import i5 from './5.png'
-import i6 from './6.png'
+import i6 from './sunBG.png'
 import i7 from './7.png'
 import i8 from './8.png'
 import i9 from './9.png'
@@ -69,7 +69,7 @@ let textArray = [
     'On the 8th of july I would like to celebrate my birthday! Come when you want, leave when you want. stay between 1 minute and 1 day. Also if I sent you an invitation, there is no expectation that you will be there, it just means that I would really enjoy it', '\n',
     "Do not feel pressure to bring any gifts, but feel free to bring something that is relaxing for you. Can be a book, a pillow, if you want to bring an instrument, please go ahead! (the stranger the instrument the better)",'\n', '\n',
     'Also I would like to make a "feestslinger" (garland?) so it might be fun to bring a piece of paper/flag I can add to the string that I will hang there. There will be a place for making music, some drinks and food. We will be near water, so there might be some swimming.', '\n', '\n',
-    'I short, please come celebrate the good life with me on the 8th of july,', '\n',
+    'In short, please come celebrate the good life with me on the 8th of july,', '\n',
     'bring along whoever you would like :)'
 ]
 
@@ -119,7 +119,7 @@ function placeImageAtCoordinates(Xcoor, Ycoor) {
     const img = document.createElement('img')
     body.appendChild(img)
     img.style.position = "absolute";
-    const randomSize = Math.floor(Math.random() * 350) + 'px'
+    const randomSize = Math.floor(Math.random() * 400) + 'px'
     img.style.width = randomSize
     img.style.height = randomSize
     let randomValueForImg = Math.floor(Math.random() * 10)
@@ -140,12 +140,17 @@ img.style.left = Xcoor-200+'px';
 img.style.top = Ycoor-200+'px';
 }
 
+let speedvariable = 350
 setInterval(() => {
-    let value = Math.floor(Math.random() * 891)
+
+    let value = Math.floor(Math.random() * 950)
     const letter = document.getElementById(value)
     if (letter){
-    letter.style.color = getRandomRgb()}
-}, 800);
+        letter.style.color = getRandomRgb()
+    }
+}, 290)
+
+
 
 
    const windowWidth = window.innerWidth

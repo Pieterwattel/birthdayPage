@@ -30,13 +30,14 @@ function placeCoolLetters(string, parentElement) {
     }
 }
 let name;
+/*
 (function () {
     name = prompt('Enter your name please:');
     if (!name) {
         name = 'Ominous Stranger'
     }
 })();
-
+*/
 
 const titleText = [`Dear ${name},`, '\n', 'I would love to see you when celebrating my birthday :)']
 const titleDiv = document.getElementById('titleDiv')
@@ -167,3 +168,55 @@ placeImageAtCoordinates(randomX1, randomY1)
         const randomX2 = Math.floor(Math.random() * windowWidth)
         const randomY2 = Math.floor(Math.random()*windowHeight)
     placeImageAtCoordinates(randomX2, randomY2)
+
+let w59Explorer = document.getElementById('map') 
+console.log(w59Explorer)
+
+let exitBtn = document.getElementById('exitBtn') 
+console.log(exitBtn)
+
+exitBtn.addEventListener('click', () => w59Explorer.remove())
+
+let header = document.getElementById('header')
+
+header.addEventListener("mousedown", ()=>{
+
+    document.addEventListener("mousemove", moveCalculatorFrame)
+
+    document.addEventListener("mouseup", ()=>{
+        document.removeEventListener("mousemove", moveCalculatorFrame)
+    })
+})
+
+let moveCalculatorFrame = (e) => {
+    let newLeft = leftLocationCalFr() + e.movementX
+    let newTop = topLocationCalFr() + e.movementY
+    console.log(newLeft)
+
+    newCoordinatesCalFr(newLeft, newTop)
+}
+
+function leftLocationCalFr (){
+    return w59Explorer.getBoundingClientRect().left + window.scrollX
+}
+
+function topLocationCalFr (){
+    return w59Explorer.getBoundingClientRect().top + window.scrollY
+}
+
+
+function newCoordinatesCalFr(left, top){
+    w59Explorer.style.left= (left + "px")
+    w59Explorer.style.top= (top + "px")
+    setTimeout(() => {
+        if (left < 0){
+            left = 0
+            newCoordinatesCalFr(left, top)
+        }
+        if (top < 0){
+            top = 0
+            newCoordinatesCalFr(left, top)
+        }
+    }, "500")
+}
+

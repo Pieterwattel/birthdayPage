@@ -9,6 +9,8 @@ import i7 from './7.png'
 import i8 from './8.png'
 import i9 from './9.png'
 import i10 from './10.png'
+import checkImg from './check.png'
+import copyImg from './copy.png'
 
 
 window.onbeforeunload = function () {
@@ -220,3 +222,48 @@ function newCoordinatesCalFr(left, top){
     }, "500")
 }
 
+const locationBtn = document.getElementById('locationBtn')
+
+locationBtn.addEventListener('click', () => {
+    
+    body.appendChild(w59Explorer)
+
+    const winWidth = window.innerWidth;
+    const winHeight = window.innerHeight;
+
+    const boxWidth = w59Explorer.offsetWidth;
+    const boxHeight = w59Explorer.offsetHeight;
+
+    w59Explorer.style.left = `${(winWidth - boxWidth) / 2}px`;
+    w59Explorer.style.top = `100vh`;
+});
+
+const copyLocation = document.getElementById('copyLocation');
+
+copyLocation.addEventListener('click', () => {
+    let text = 'https://maps.app.goo.gl/Ey4BVwbgHKKYPDEo6'
+    copyTextToClipboard(text)
+    copyLocation.innerHTML = 'saved to clipboard!'
+        const img = document.createElement('img')
+    img.setAttribute('src', checkImg)
+
+    copyLocation.appendChild(img)
+    setTimeout(() => {
+        copyLocation.innerHTML =
+            'copy location'
+        const img = document.createElement('img')
+
+            img.setAttribute('src', copyImg)
+    copyLocation.appendChild(img)
+    }, 2000);
+})
+
+function copyTextToClipboard(text) {
+        navigator.clipboard.writeText(text)
+            .then(() => console.log('Text copied'))
+            .catch(err => console.error('Failed to copy:', err));
+    };
+    
+    let autoRun = (function () {
+        w59Explorer.remove()
+    })();

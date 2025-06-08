@@ -119,9 +119,11 @@ button:active{
     
   background-color: rgb(175, 175, 175);
   width: calc(40vw + 140px);
-  height: min(200px fit-content);
+  height: fit-content;
   box-shadow: 2px 2px 0px black,  2px 2px 0px inset rgb(255, 248, 236);
   padding: 0.02em;
+  resize: both;
+  overflow: auto;
 }
 
 .w95Explorer *{
@@ -160,7 +162,7 @@ box-shadow:
   width: 100%;
   background-color: rgb(175, 175, 175);
   padding: 1em;
-  height: fit-content;
+  height: auto;
   padding-bottom: 0.3em;
 }
 

@@ -196,6 +196,8 @@ if (window.mobileCheck()){
         })
     });
 
+    w59Explorer.style.width="90vw"
+
 } else {
     header.addEventListener("mousedown", () => {
 
@@ -205,7 +207,7 @@ if (window.mobileCheck()){
             document.removeEventListener("mousemove", moveCalculatorFrame)
         })
     });
-    w59Explorer.style.width="30vw"
+        w59Explorer.style.width="30vw"
 }
 
 

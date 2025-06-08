@@ -118,8 +118,8 @@ button:active{
     position: absolute;
     
   background-color: rgb(175, 175, 175);
-  width: calc(40vw + 140px);
-  height: fit-content;
+  width: calc(20vw + 200px) !important;
+  height: auto;
   box-shadow: 2px 2px 0px black,  2px 2px 0px inset rgb(255, 248, 236);
   padding: 0.02em;
   resize: both;
@@ -159,7 +159,7 @@ box-shadow:
     0 0 0 7px rgb(131, 131, 131);}
 
 .w95Explorer main {
-  width: 100%;
+  max-width: 100%;
   background-color: rgb(175, 175, 175);
   padding: 1em;
   height: auto;
@@ -167,8 +167,10 @@ box-shadow:
 }
 
 .w95Explorer main *{
-height: auto;
-width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+
 }
 
 .w95Explorer footer{

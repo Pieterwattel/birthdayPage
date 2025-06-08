@@ -123,7 +123,7 @@ button:active{
   box-shadow: 2px 2px 0px black,  2px 2px 0px inset rgb(255, 248, 236);
   padding: 0.02em;
   resize: both;
-  overflow: auto;
+  overflow:hidden;
 }
 
 .w95Explorer *{
@@ -167,7 +167,7 @@ box-shadow:
 }
 
 .w95Explorer main *{
-height: fit-content;
+height: auto;
 width: 100%;
 }
 

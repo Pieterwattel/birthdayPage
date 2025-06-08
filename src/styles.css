@@ -94,23 +94,23 @@ user-select: none;
 }
 
 button{
-  border: 3px solid rgb(63, 56, 56);
+  border: 1px solid rgb(63, 56, 56);
   background-color: rgb(129, 129, 129);
-  box-shadow: 3px 4px 0px black,  2px 3px 0px inset rgb(255, 248, 236);
-
+  box-shadow: 2px 2px 0px black,  2px 2px 0px inset rgb(255, 248, 236);
+  max-width: fit-content;
+  display: flex;
+  flex-direction: row;
 }
 
-button:hover,
-.hoverBtn:hover{
+button:hover{
   background-color: rgb(114, 114, 114);
   outline: 2px dotted black;
   outline-offset: -7px;
 }
 
 button:active{
-  box-shadow: inset 3px 4px 0px  black;
+  box-shadow: inset 2px 2px 0px  black;
     border: 0px 0px;
-
 }
 
 .w95Explorer{
@@ -127,8 +127,6 @@ button:active{
 .w95Explorer *{
   font-size: clamp(0.8rem, 2.2vh, 2.2rem);
   font-family: 'w95';
-  width: 100%;
-  min-height: 1em;
 }
 
 .w95Explorer header {
@@ -138,10 +136,12 @@ button:active{
   flex-direction: row;
   justify-content: space-between;
   max-height: 1.2em;
-  padding: 0.1em;
+  padding: 0.2em;
+
+  min-height: 1em;
 }
 
-.w95Explorer header *{
+.w95Explorer header > *{
 max-height: 0.8em !important;
 width: auto;
 overflow: hidden;
@@ -150,21 +150,63 @@ overflow: hidden;
 .content{
     height: fit-content;
     width: fit-content;
-}
+box-shadow:
+  0 0 0 1px rgb(31, 31, 31),
+  0 0 0 3px rgb(68, 68, 68),
+  0 0 0 5px rgb(109, 109, 109),
+    0 0 0 7px rgb(131, 131, 131);}
 
 .w95Explorer main {
-
+  width: 100%;
   background-color: rgb(175, 175, 175);
-  padding: 0.2em;
+  padding: 1em;
+  height: fit-content;
+  padding-bottom: 0.3em;
 }
 
-.w95Explorer main > {
-  background-color: black;
-  width: 100%;
-  height: 100%;
+.w95Explorer main *{
+height: fit-content;
+width: 100%;
 }
 
 .w95Explorer footer{
   background-color: rgb(175, 175, 175);
+    display: flex;
+    gap: 0.5em;
+  height: fit-content;
+  padding: 0.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
 
+.button{
+    
+  background-color: rgb(175, 175, 175);
+  box-shadow: 2px 2px 0px black,  2px 2px 0px inset rgb(255, 248, 236);
+  padding: 0.02em;
+}
+
+.button:hover{
+  background-color: rgb(114, 114, 114);
+  outline: 2px dotted black;
+  outline-offset: -7px;
+}
+
+.button{
+  background-color: rgb(129, 129, 129);
+  box-shadow: 3px 4px 0px black,  2px 3px 0px inset rgb(255, 248, 236);
+
+}
+.button:active{
+  box-shadow: inset 3px 4px 0px  black;
+    border: 0px 0px;
+}
+
+button > *{
+  max-height: 1em;
+  max-width: 0.8em;
+}
+
+a{
+  width: fit-content;
 }

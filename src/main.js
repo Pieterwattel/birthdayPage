@@ -31,15 +31,13 @@ function placeCoolLetters(string, parentElement) {
     k++
     }
 }
-let name;
-/*
+let name
 (function () {
     name = prompt('Enter your name please:');
     if (!name) {
         name = 'Ominous Stranger'
     }
 })();
-*/
 
 const titleText = [`Dear ${name},`, '\n', 'I would love to see you when celebrating my birthday :)']
 const titleDiv = document.getElementById('titleDiv')

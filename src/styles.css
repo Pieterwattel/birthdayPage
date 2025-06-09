@@ -91,6 +91,7 @@ user-select: none;
 
 .line{
   align-self: flex-start;
+  min-height: 1em;
 }
 
 button{
@@ -121,8 +122,6 @@ button:active{
   height: auto;
   box-shadow: 2px 2px 0px black,  2px 2px 0px inset rgb(255, 248, 236);
   padding: 0.02em;
-  resize: both;
-  overflow:hidden;
 }
 
 .w95Explorer *{

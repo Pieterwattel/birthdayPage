@@ -11,6 +11,7 @@ background-image: linear-gradient(rgb(62, 0, 119), rgb(255, 208, 0));
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 0.5em;
 }
 
 @font-face {
@@ -69,16 +70,13 @@ background-image: linear-gradient(rgb(62, 0, 119), rgb(255, 208, 0));
    text-align: center;
 }
 
-line div{
-margin-bottom: 2vh;
-}
-
 #textLines{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: calc(20vw - 60px);
     margin-right: calc(20vw - 60px);
+    gap: 0.5em;
 }
 
 *{
@@ -91,7 +89,6 @@ user-select: none;
 
 .line{
   align-self: flex-start;
-  min-height: 1em;
 }
 
 button{
@@ -146,6 +143,8 @@ max-height: 0.8em !important;
 width: auto;
 overflow: hidden;
 }
+
+
 
 .content{
     height: fit-content;

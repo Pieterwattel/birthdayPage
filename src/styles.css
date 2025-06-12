@@ -64,13 +64,24 @@ background-image: linear-gradient(rgb(62, 0, 119), rgb(255, 208, 0));
 }
 
 #titleDiv{
-   margin-bottom: 20vh;
+   margin-bottom: 0vh;
    margin-top: 20vh;
    text-align: center;
 }
 
 .line div{
 margin-bottom: 2vh;
+}
+
+#locationBtn{
+  font-family: 'retroFont';
+  color: wheat;
+  text-decoration: underline;
+}
+
+#wordArt{
+  width: 70vw;
+  height: auto;
 }
 
 #textLines{
@@ -101,6 +112,9 @@ button{
   max-width: fit-content;
   display: flex;
   flex-direction: row;
+  color: black;
+  font-family: 'w95';
+  font-weight:lighter;
 }
 
 button:hover{

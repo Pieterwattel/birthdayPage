@@ -66,7 +66,7 @@ function placeCoolLettersOrNextLine(string, parentElement) {
 }
 
 let textArray = [
-    'what? my birthday!', '\n', 
+    '\n', 
     'when: 8th of july from 14:00', '\n',
     'where:', '\n', '\n',
     'On the 8th of july I would like to celebrate my birthday! Come when you want, leave when you want. stay between 1 minute and 1 day. Also if I sent you an invitation, there is no expectation that you will be there, it just means that I would really enjoy it', '\n',
@@ -151,7 +151,7 @@ setInterval(() => {
     if (letter){
         letter.style.color = getRandomRgb()
     }
-}, 290)
+}, 1000)
 
 
 

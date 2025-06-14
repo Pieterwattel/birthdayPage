@@ -11,7 +11,7 @@ background-image: linear-gradient(rgb(62, 0, 119), rgb(255, 208, 0));
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
+    }
 
 @font-face {
   font-family: 'retroFont';

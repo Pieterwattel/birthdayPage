@@ -55,7 +55,7 @@ const weather = {
       case temp <= 10:
         return `${temp}°C, cold 🧥`;
       case temp <= 20:
-        return `${temp}°C, cool 🌤️`;
+        return `${temp}°C, cool 🌫`;
       case temp <= 25:
         return `${temp}°C, mild 🙂`;
       case temp <= 30:

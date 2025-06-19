@@ -118,17 +118,6 @@ function getRandomRgb() {
 }
 
 const body = document.querySelector('body');
-body.addEventListener('mousedown', (e) => {
-  const windowWidth = window.innerWidth;
-  const windowHeight = document.body.scrollHeight;
-  const randomX = Math.floor(Math.random() * windowWidth);
-  const randomY = Math.floor(Math.random() * windowHeight);
-  placeImageAtCoordinates(randomX, randomY);
-
-  const randomX1 = Math.floor(Math.random() * windowWidth);
-  const randomY1 = Math.floor(Math.random() * windowHeight);
-  placeImageAtCoordinates(randomX1, randomY1);
-});
 
 const flowerArray = [i1, i2, i3, i4, i5, i6, i7, i8, i9, i10];
 
@@ -151,6 +140,16 @@ function placeImageAtCoordinates(Xcoor, Ycoor) {
 
   img.addEventListener('click', () => {
     img.remove();
+
+    const windowWidth = window.innerWidth;
+    const windowHeight = document.body.scrollHeight;
+    const randomX = Math.floor(Math.random() * windowWidth);
+    const randomY = Math.floor(Math.random() * windowHeight);
+    placeImageAtCoordinates(randomX, randomY);
+
+    const randomX1 = Math.floor(Math.random() * windowWidth);
+    const randomY1 = Math.floor(Math.random() * windowHeight);
+    placeImageAtCoordinates(randomX1, randomY1);
   });
 
   img.style.left = Xcoor - 200 + 'px';

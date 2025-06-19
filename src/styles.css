@@ -34,7 +34,7 @@ body {
   width: min(80vh, 80vw);
   height: min(80vh, 80vw);
   position: absolute;
-  bottom: -50vh;
+  bottom: -30vh;
 }
 
 .rotate {

@@ -272,7 +272,7 @@ locationBtn.addEventListener('click', () => {
 const copyLocation = document.getElementById('copyLocation');
 
 copyLocation.addEventListener('click', () => {
-  let text = 'https://maps.app.goo.gl/Ey4BVwbgHKKYPDEo6';
+  let text = 'https://maps.app.goo.gl/xcwCAYeEixGhBZHo7';
   copyTextToClipboard(text);
   copyLocation.innerHTML = 'saved to clipboard!';
   const img = document.createElement('img');

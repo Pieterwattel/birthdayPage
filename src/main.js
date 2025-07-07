@@ -341,5 +341,5 @@ function viewMap() {
 }
 
 alert(
-  'I am looking for big tarps (zeilen) to make a space that is dry.\n If you can help me with that please let me know!! \n thank you :)',
+  'ATTENTION: \n It is going to rain a bit tomorrow. \nmy solution is this: please bring a tent if you have one, the bigger the better!',
 );

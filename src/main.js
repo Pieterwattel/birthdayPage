@@ -341,5 +341,5 @@ function viewMap() {
 }
 
 alert(
-  'ATTENTION: \n It is going to rain a bit tomorrow. \nmy solution is this: please bring a tent if you have one, the bigger the better!',
+  'ATTENTION: \n It is going to rain a bit tomorrow. \nmy solution is this: please bring a tent if you have one, the bigger the better! \n ALSO: if you have a tarp (zeil) that I can borrow please let me know! :)',
 );
